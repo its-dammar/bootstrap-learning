@@ -1,0 +1,92 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: #ec4d37;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a{
+    color: #fff;
+    padding: 1rem;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+/* form */
+.container{
+    margin: 2rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.contact{
+    width: 600px;
+    /* flex: 1 1 500px; */
+}
+img{
+    width: 100%;
+}
+.contact1{
+    max-width: 500px;
+}
+form{
+    padding: 1rem;
+}
+input{
+    width: 100%;
+    margin-bottom:1rem ;
+    margin-top: 0.3rem;
+    padding: 0.5rem;
+}
+
+
+input[type="submit"]
+{
+    width: 100px;
+}
+
+
+
+/* responsive */
+
+@media screen and (max-width:600px) {
+    .navbar a:not(:first-child){
+        display: none;
+    }
+
+    .navbar a.icon{
+        float: right;
+        display: block;
+    }
+
+
+    /* responsive using js of css class */
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .navbar.responsive a{
+        display: block;
+    }
+
+
+}

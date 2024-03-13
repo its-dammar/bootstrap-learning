@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Nav and form validation</title>
+    <link rel="stylesheet" href="respon-nav.css">
+</head>
+
+<body>
+    
+    <nav class="navbar" id="nav">
+        <a href="#"> LOGO</a>
+        <a href="#"> Home</a>
+        <a href="#"> About</a>
+        <a href="#"> Services</a>
+        <a href="#"> Blogs</a>
+        <a href="#"> Company</a>
+        <a href="#"> Gallery</a>
+        <a href="#"> Products</a>
+        <a href="#"> Contact</a>
+        <a href="#" class="icon" onclick="responsive()"> &#9776;</a>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="contact contact1">
+                <form action="" method="#" name="myFrom" onsubmit="return formValidation()" enctype="multipart/form-data">
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <p id="nErrorMessage"></p>
+
+                    <label for="Phone">Phone</label>
+                    <input type="tel" id="Phone" name="phone">
+                    <p id="pErrorMessage"></p>
+
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="email">
+                    <p id="eErrorMessage"></p>
+
+                    <label for="password">password</label>
+                    <input type="password" id="password" name="password">
+                    <p id="passErrorMessage"></p>
+
+                    <label for="cpassword">Confirm password</label>
+                    <input type="password" id="cpassword" name="cpassword">
+                    <p id="cPassErrorMessage"></p>
+
+                    <input type="submit" name="submit">
+                </form>
+            </div>
+            <div class="contact contact2">
+                <img src="https://c8.alamy.com/comp/J74N2N/woman-using-smartphone-sitting-on-the-bench-in-night-city-J74N2N.jpg"
+                    alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <script src="respon-nav.js"></script>
+</body>
+
+</html>
